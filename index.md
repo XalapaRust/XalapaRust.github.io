@@ -1,5 +1,6 @@
 ---
 title: Página principal de Xalapa-Rust
+permalink: index.html
 ---
 
 # Sitio web del grupo de programación en Rust de Xalapa
