@@ -10,7 +10,7 @@ Nos reunimos más o menos una vez al mes en algún café del centro de
 Xalapa.  Todas las personas que estén interesadas en el lenguaje de
 programación [Rust](https://rust-lang.org) son bienvenidas.
 
-Nos guiamos por un [código de conducta]({% link codigo_de_conducta.html %}), el Código de Conducta Convenido para Contribuyentes.
+Nos guiamos por un [código de conducta](/codigo_de_conducta.html), el Código de Conducta Convenido para Contribuyentes.
 
 ## Reuniones pasadas
 
