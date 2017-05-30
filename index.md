@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Página principal de Xalapa-Rust
 permalink: index.html
 ---
