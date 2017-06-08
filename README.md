@@ -5,7 +5,7 @@ Xalapa.  Todas las personas que estén interesadas en el lenguaje de
 programación [Rust](https://rust-lang.org) son bienvenidas.
 
 Nos guiamos por un código de conducta, el Código de Conducta Convenido
-para Contribuyentes.  Puedes leerlo en el archivo [código de conducta](https://xalaparust.github.io/codigo_de_conducta.html).
+para Contribuyentes.  Puedes leerlo en el archivo [codigo de conducta](https://xalaparust.github.io/codigo_de_conducta.html).
 
 ## Reuniones pasadas
 
@@ -14,4 +14,4 @@ para Contribuyentes.  Puedes leerlo en el archivo [código de conducta](https://
 ## Enlaces
 
 * [El libro](https://doc.rust-lang.org/book/)
-* [Una nota sobre módulos en rust](https://medium.com/@artur.dev/modules-in-rust-68249e9894f6)
+* [Una nota sobre modulos en rust](https://medium.com/@artur.dev/modules-in-rust-68249e9894f6)
