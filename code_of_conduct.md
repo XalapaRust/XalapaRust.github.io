@@ -3,7 +3,8 @@ title: Código de Conducta convenido para Contribuyentes
 permalink: codigo_de_conducta.html
 ---
 
-# Código de Conducta convenido para Contribuyentes
+Código de Conducta convenido para Contribuyentes
+================================================
 
 ## Nuestro compromiso
 

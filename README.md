@@ -5,7 +5,7 @@ Xalapa.  Todas las personas que estén interesadas en el lenguaje de
 programación [Rust](https://rust-lang.org) son bienvenidas.
 
 Nos guiamos por un código de conducta, el Código de Conducta Convenido
-para Contribuyentes.  Puedes leerlo en el archivo [code_of_conduct.md](code_of_conduct.md).
+para Contribuyentes.  Puedes leerlo en el archivo [código de conducta](https://xalaparust.github.io/codigo_de_conducta.html).
 
 ## Reuniones pasadas
 
