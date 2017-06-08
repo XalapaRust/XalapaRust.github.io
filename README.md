@@ -10,3 +10,8 @@ para Contribuyentes.  Puedes leerlo en el archivo [code_of_conduct.md](code_of_c
 ## Reuniones pasadas
 
 ### 2017/mayo - Reunión inicial en el Reformanda; nos presentamos.
+
+## Enlaces
+
+* [El libro](https://doc.rust-lang.org/book/)
+* [Una nota sobre módulos en rust](https://medium.com/@artur.dev/modules-in-rust-68249e9894f6)
