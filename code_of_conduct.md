@@ -1,5 +1,6 @@
 ---
 title: Código de Conducta convenido para Contribuyentes
+layout: default
 permalink: codigo_de_conducta.html
 ---
 
