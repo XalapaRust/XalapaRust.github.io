@@ -1,5 +1,5 @@
 ---
-title: Grupo de Rust en xalapa
+title: Grupo de Rust en Xalapa
 layout: default
 permalink: index.html
 ---
@@ -19,5 +19,21 @@ para Contribuyentes.  Puedes leerlo en el archivo [codigo de conducta]({% link c
 
 ## Enlaces
 
+### Referencias de programación con Rust
+
 * [El libro](https://doc.rust-lang.org/book/)
 * [Una nota sobre modulos en rust](https://medium.com/@artur.dev/modules-in-rust-68249e9894f6)
+
+## Mensajería instantanea (Chat)
+
+### gitter.im
+
+Estamos conectados en la comunidad [gitter.im/Xalapa-Rust](https://gitter.im/Xalapa-Rust).
+
+#### Salas de interés
+
+* [gitter.im/Xalapa-Rust/Lobby](https://gitter.im/Xalapa-Rust/Lobby) - Es la sala principal de interés general y todas las personas interesadas en aprender/compartir/preguntar/contestar/etc. asuntos relativos a Rust y la gente entusiasta que lo promueve en Xalapa.
+
+* [gitter.im/Xalapa-Rust/CosasLinux](https://gitter.im/Xalapa-Rust/CosasLinux) - Es la sala para hablar y compartir conocimientos acerca de sistemas operativos Linux y sus diversas variantes. 
+
+* [gitter.im/Xalapa-Rust/Organizacion](https://gitter.im/Xalapa-Rust/Organizacion) - Es la sala para llevar a cabo la organización de eventos y recursos de nuestra comunidad. Pasa y salúdanos si te interesa participar o si tienes alguna propuesta.
