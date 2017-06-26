@@ -4,7 +4,9 @@ layout: default
 permalink: index.html
 ---
 
-# Sitio web del grupo de programación en Rust de Xalapa
+# Xalapa Rust
+
+![Nuestro Logo, el cangrejo Ferris sobre el cerro Macuiltépetl, enmarcados por un engrane]({% link rust-xalapa.png %} "Logo tentativo de Xalapa Rust")
 
 Nos reunimos más o menos una vez al mes en algún café del centro de
 Xalapa.  Todas las personas que estén interesadas en el lenguaje de
