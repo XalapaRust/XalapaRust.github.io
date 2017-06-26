@@ -19,6 +19,13 @@ para Contribuyentes.  Puedes leerlo en el archivo [codigo de conducta]({% link c
 
 ## Enlaces
 
+### Comunidad Rust MX
+
+* [Facebook](https://www.facebook.com/groups/programadores.rustlang)
+* [Twitter](https://twitter.com/rustlang_mx)
+* [MeetUp](https://www.meetup.com/es-ES/Rust-MX/)
+* [GitHub](https://github.com/rustmx)
+
 ### Referencias de programación con Rust
 
 * [El libro](https://doc.rust-lang.org/book/)
