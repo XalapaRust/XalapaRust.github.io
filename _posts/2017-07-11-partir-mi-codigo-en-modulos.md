@@ -8,9 +8,9 @@ layout: default
 
 por [@Categulario](https://twitter.com/categulario)
 
-Como antecedente de este post está este, que explica un poco sobre los módulos en rust: [Una nota sobre modulos en rust](https://medium.com/@artur.dev/modules-in-rust-68249e9894f6). Mi motivación para escribir esta entrada es amplar el conocimiento a un caso un poco más amplio que no pude resolver leyendo eso. Algunas cosas, sin embargo, las traeré de esa entrada.
+Como antecedente de este post está [éste](https://medium.com/@artur.dev/modules-in-rust-68249e9894f6), que explica un poco sobre los módulos en rust. Mi motivación aquí es ampliar el conocimiento a un caso que no pude resolver leyendo eso. Algunas cosas, sin embargo, las traeré de esa entrada.
 
-Específicamente se trata de repartir código entre módulos donde unos dependen de otros, y todos dependen de bibliotecas externas.
+Específicamente se trata de repartir tu propio código entre módulos donde unos dependen de otros, y todos dependen de bibliotecas externas.
 
 ## Partiendo el código en cachos
 
@@ -37,21 +37,21 @@ Mi objetivo era tener el codec (`LineCodec`), el protocolo (`LineProto`) y el se
 
 **codec.rs**
 ```rust
-// los uses de LineCodec
+// los `use` de LineCodec
 
 struct LineCodec;
 ```
 
 **proto.rs**
 ```rust
-// los uses de LineProto
+// los `use` de LineProto
 
 struct LineProto;
 ```
 
 **service.rs**
 ```rust
-// los uses de Echo
+// los `use` de Echo
 
 struct Echo;
 ```
@@ -72,7 +72,7 @@ De alguna manera nunca pensé que debería también distribuirlos entre los arch
 
 ## Usando lo aprendido del post
 
-Naturalmente que esa distribución por sí misma no compila, así que integré lo aprendido en el blog aquel añadiendo algunos `pub`s por aquí y por allá:
+Naturalmente que esa distribución por sí misma no compila, así que integré lo del blog aquel añadiendo algunos `pub`s por aquí y por allá:
 
 ```rust
 // codec.rs
@@ -87,9 +87,13 @@ pub struct Echo;
 // main.rs
 mod proto;
 mod service;
+
+// donde uso LineProto o Echo lo cambié por:
+proto::LineProto;
+service::LineService;
 ```
 
-Claro que esto por sí mismo no funcionó, y el problema era que hasta aquí llega esa entrada de blog, así que me concentre en los errores del compilador.
+Lo cual no funcionó del todo y sin embargo es todo lo que dice el blog citado al principio, así que me concentre en los errores del compilador.
 
 ## Dependencias entre módulos
 
@@ -162,7 +166,26 @@ use LineCodec;
 
 ## Conclusiones
 
+### Sobre el sistema de módulos
+
+Al parecer tienes que declarar los módulos locales (vaya los que tu escribes) en el _punto de entrada_ que en este caso es el `main.rs` y luego si un submódulo usa algo que está en otro tienes que _publicarlo_ en `main.rs` para que sea accesible. A veces el compilador dice algo como `no lo encontré en la raíz`.
+
 La forma en que llegué a estas conclusiones fue leyendo el código fuente de la biblioteca `tokio`. Es tan grande que tiene que resolver este caso que yo tenía que resolver. Recomiendo bastante leer código fuente de bibliotecas grandes y bonitas como esa para aprender las mejores prácticas.
+
+### Lo que dice la documentación
+
+Leyendo [el libro](https://doc.rust-lang.org/book/second-edition/ch07-01-mod-and-the-filesystem.html) encontré que de hecho puedes declarar módulos en el punto de entrada (`main.rs` en el caso de binarios y `lib.rs` en el caso de bibliotecas) y en los archivos `mod.rs`, que también pueden estar en subdirectorios. De modo que otra solución posible a mi problema era:
+
+```
+.
+├── main.rs
+├── proto
+│   ├── codec.rs
+│   └── lib.rs
+└── service.rs
+```
+
+Donde `proto/lib.rs` puede hacer `mod codec;` sin preocupaciones y `main.rs` no necesita declarar el módulo codec en realidad.
 
 ## Enlaces
 
