@@ -6,6 +6,8 @@ layout: default
 ¿Cómo usar módulos locales?
 ===========================
 
+por [@Categulario](https://twitter.com/categulario)
+
 Como antecedente de este post está este, que explica un poco sobre los módulos en rust: [Una nota sobre modulos en rust](https://medium.com/@artur.dev/modules-in-rust-68249e9894f6). Mi motivación para escribir esta entrada es amplar el conocimiento a un caso un poco más amplio que no pude resolver leyendo eso. Algunas cosas, sin embargo, las traeré de esa entrada.
 
 Específicamente se trata de repartir código entre módulos donde unos dependen de otros, y todos dependen de bibliotecas externas.
