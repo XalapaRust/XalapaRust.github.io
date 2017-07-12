@@ -27,6 +27,15 @@
         <p>Lee el <a href="{% link code_of_conduct.md %}" title="Enlace a nuestro código de conducta">código de conducta</a>.</p>
 
         <p class="view">Nuestro <a href="https://github.com/XalapaRust" title="perfil en Github">github</a></p>
+
+        <strong>Entradas del blog</strong>
+        <ul>
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}">{{ post.date | date: '%Y-%m-%d' }} {{ post.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
       </header>
       <section>
 

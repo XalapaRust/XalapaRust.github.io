@@ -29,7 +29,6 @@ para Contribuyentes.  Puedes leerlo en [este archivo]({% link code_of_conduct.md
 ### Referencias de programación con Rust
 
 * [El libro](https://doc.rust-lang.org/book/)
-* [Una nota sobre modulos en rust](https://medium.com/@artur.dev/modules-in-rust-68249e9894f6)
 
 ## Mensajería instantanea (Chat)
 
