@@ -19,3 +19,16 @@ bundle install --path vendor/bundle
 Lo que puedes hacer ahora:
 * Corre el servidor de jekyll: `bundle exec jekyll serve`,
 * o compila el sitio `bundle exec jekyll build`.
+
+## Escribir una entrada de blog
+
+Solo créate un archivo en la carpeta `_posts/` cuyo nombre tenga la fecha en formato ISO. Checa las entradas que ya están ahí para darte una idea.
+
+No olvides poner al comienzo las siguientes líneas:
+
+```
+---
+title: Tu título
+layout: default
+---
+```
